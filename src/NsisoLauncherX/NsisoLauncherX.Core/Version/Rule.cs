@@ -3,12 +3,20 @@ using NsisoLauncherX.Core.Utils;
 
 namespace NsisoLauncherX.Core.Version;
 
+public class RuleCollection : List<Rule>, IRuleConstraint
+{
+    public bool CheckIsEnable(Dictionary<string, bool>? givenFeatures)
+    {
+        return this.All(rule => rule.CheckIsEnable(givenFeatures));
+    }
+}
+
 public class Rule : IRuleConstraint
 {
     /// <summary>
-    /// action: "allow" or ...
+    /// rule's action: "allow" or "disallow" are known.
     /// </summary>
-    public string Action { get; set; }
+    public required string Action { get; set; }
 
     /// <summary>
     /// Operating system info
@@ -74,7 +82,7 @@ public class OperatingSystemInfo
     /// <summary>
     /// 系统名称
     /// </summary>
-    public string Name { get; set; }
+    public required string Name { get; set; }
 
     /// <summary>
     /// Support os version

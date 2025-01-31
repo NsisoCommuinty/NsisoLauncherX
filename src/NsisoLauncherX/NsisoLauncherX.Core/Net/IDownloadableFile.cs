@@ -14,7 +14,7 @@ public interface IDownloadableFile
     /// The total size of this file, null for unknown
     /// </summary>
     /// <returns>Download source url</returns>
-    ulong? TotalSize { get; }
+    ulong? DownloadTotalSize { get; }
     
     /// <summary>
     /// The hash algorithm name and the value for this object to check, null for no check.

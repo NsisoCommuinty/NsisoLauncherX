@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NsisoLauncherX.Core.Net
 {
-    public class NetRequester
+    public class NetRequester: IDisposable
     {
 
         /// <summary>
@@ -20,7 +20,7 @@ namespace NsisoLauncherX.Core.Net
         private string ClientName { get; set; } = "NsisoLauncherX";
 
         /// <summary>
-        /// Set the DefaultRequestHeaders AcceptLanguag in the requester.
+        /// Set the DefaultRequestHeaders 'AcceptLanguage' in the requester.
         /// </summary>
         private string AcceptLanguageName { get; set; } = CultureInfo.CurrentCulture.Name;
 
@@ -56,6 +56,13 @@ namespace NsisoLauncherX.Core.Net
             // set the default headers
             this.Client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue(ClientName, ClientVersion));
             this.Client.DefaultRequestHeaders.AcceptLanguage.Add(new StringWithQualityHeaderValue(this.AcceptLanguageName));
+        }
+
+        public void Dispose()
+        {
+            Client.Dispose();
+            ClientHandler.Dispose();
+            //GC.SuppressFinalize(this);
         }
     }
 }

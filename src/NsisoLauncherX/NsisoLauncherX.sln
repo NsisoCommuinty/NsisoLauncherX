@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsisoLauncherX.Core", "Nsis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsisoLauncherX.Console", "NsisoLauncherX.Console\NsisoLauncherX.Console.csproj", "{BCACB8C9-CCE9-48AA-ADCC-DB06D9D7E127}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsisoLauncherX.Core.Test", "NsisoLauncherX.Core.Test\NsisoLauncherX.Core.Test.csproj", "{4221E434-5951-41C4-A952-34CF5DD4A96B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NsisoLauncherX.Core.Test", "NsisoLauncherX.Core.Test\NsisoLauncherX.Core.Test.csproj", "{53B644B1-449E-4E38-A6C3-C6B25EFA1788}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{BCACB8C9-CCE9-48AA-ADCC-DB06D9D7E127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCACB8C9-CCE9-48AA-ADCC-DB06D9D7E127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCACB8C9-CCE9-48AA-ADCC-DB06D9D7E127}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4221E434-5951-41C4-A952-34CF5DD4A96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4221E434-5951-41C4-A952-34CF5DD4A96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4221E434-5951-41C4-A952-34CF5DD4A96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4221E434-5951-41C4-A952-34CF5DD4A96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B644B1-449E-4E38-A6C3-C6B25EFA1788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B644B1-449E-4E38-A6C3-C6B25EFA1788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B644B1-449E-4E38-A6C3-C6B25EFA1788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B644B1-449E-4E38-A6C3-C6B25EFA1788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
